@@ -8,7 +8,7 @@ var PORT = 3000;
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.static(__dirname + "./app/Public/"));
+app.use(express.static("Public"));
 
 
 
@@ -24,5 +24,5 @@ app.get("/api/friends", function(req, res){
 });
 
 app.listen(PORT, function(){
-    console.log("server listening to " + PORT);
+    console.log("server listening to PORT " + PORT);
 });
