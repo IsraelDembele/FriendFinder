@@ -207,7 +207,7 @@
       <span>|</span>
       <!-- <a href="/api/clear">Clear Friends</a>
     <span>|</span> -->
-      <a href="https://github.com/israelboot81/friend-finder">GitHub Repo</a>
+      <a href="https://github.com/israelboot81/friendFinder">GitHub Repo</a>
       <br>
     </div>
   </div>
@@ -228,7 +228,8 @@
         $("#question8").val(),
         $("#question9").val(),
         $("#question10").val()
-      ];
+      ]; 
+
       var userphoto = $("#photo").val();
       var username = $("#name").val()
 
@@ -236,14 +237,24 @@
         name: username,
         photo: userphoto,
         scores: responses
-      };
+      };  
+      $("#friend-form").html("Thanks for your submission! Meet your new best friend!");
+$.post("/api/friends", user)
+.done(function(data) {
+  $("#match-name").text(data.name);
+  $("#match-image").attr("src", data.photo);
+});
+});
+$("#close-modal").on("click", function(){
+  setTimeout(function(){location.reload()}, 1000);
+});
 
-      $.get("/api/friends", (dt, status) => {
-        console.log(dt, status);
-      });
+     // $.get("/api/friends", (dt, status) => {
+       // console.log(dt, status);
+     // });
 
       // console.log(user);
-    });
+   // });
   </script>
 </body>
 

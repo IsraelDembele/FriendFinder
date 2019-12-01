@@ -1,7 +1,7 @@
 var tableArray = [
     {
-        "name":"Ahmed",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Rod",
+        "photo":'https://media.giphy.com/media/YdaNOf7bjSWbe/giphy.gif',
         "scores":[
             5,
             1,
@@ -16,8 +16,8 @@ var tableArray = [
           ]
       },
       {
-        "name":"Alice",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Rachida",
+        "photo":'https://media.giphy.com/media/38bFvh7mpryOA/giphy.gif',
         "scores":[
             2,
             3,
@@ -32,8 +32,8 @@ var tableArray = [
           ]
       },
       {
-        "name":"Rachida",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Armel",
+        "photo":'https://media.giphy.com/media/fZdzEHC8sMC0E/giphy.gif',
         "scores":[
             1,
             2,
