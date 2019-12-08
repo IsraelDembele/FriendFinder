@@ -1,8 +1,8 @@
 var tableArray = [
     {
-        "name":"Rod",
-        "photo":'https://media.giphy.com/media/YdaNOf7bjSWbe/giphy.gif',
-        "scores":[
+        name:  "Rod",
+        photo:'https://media.giphy.com/media/YdaNOf7bjSWbe/giphy.gif',
+        scores:[
             5,
             1,
             4,
@@ -16,9 +16,9 @@ var tableArray = [
           ]
       },
       {
-        "name":"Rachida",
-        "photo":'https://media.giphy.com/media/38bFvh7mpryOA/giphy.gif',
-        "scores":[
+        name: "Rachida",
+        photo:'https://media.giphy.com/media/38bFvh7mpryOA/giphy.gif',
+        scores:[
             2,
             3,
             4,
@@ -32,9 +32,9 @@ var tableArray = [
           ]
       },
       {
-        "name":"Armel",
-        "photo":'https://media.giphy.com/media/fZdzEHC8sMC0E/giphy.gif',
-        "scores":[
+        name:"Armel",
+        photo:'https://media.giphy.com/media/fZdzEHC8sMC0E/giphy.gif',
+        scores:[
             1,
             2,
             3,

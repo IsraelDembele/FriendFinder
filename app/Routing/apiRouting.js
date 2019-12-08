@@ -18,12 +18,20 @@ module.exports = function(app){
 		difference: 10000
 	}
 
+	console.log(friendData)
 	// Calculating totals 
 	for (var i = 0; i < friendData.length; i++) {
 		total = 0;
 
-		for (var j = 0; j < friendData[i].preferences.length; j++) {
-			total += Math.abs(friendData[i].preferences[j] - newFriend.preferences[j]);
+		for (var j = 0; j < friendData[i].scores.length; j++) {
+
+			var diffe = friendData[i].scores[j] - newFriend.scores[j]
+
+			if(diffe < 0){
+				diffe = diffe * (-1);
+			}
+			total = total + diffe;
+
 
 			if (total <= match.difference) {
 				match.name = friendData[i].name,
@@ -31,8 +39,10 @@ module.exports = function(app){
 				match.difference = total
 			}
     	}
-    }
-    friendData.push(newFriend);
+	}
+	
+	friendData.push(newFriend);
+	
     res.json(match);
     console.log(match);
 	});
